@@ -32,3 +32,9 @@
 - fg : Brings the most recent job to foreground
 - fg n : Brings job n to the foreground
 
+## File permission
+- chmod (octal file) : Change the permission of file to octal,which can be found separately for user,group,world by adding, 4-read(r), 2-write(w), 1-execute(x)
+
+
+
+
