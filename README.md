@@ -35,7 +35,7 @@
 ## File permission
 - chmod (octal file) : Change the permission of file to octal,which can be found separately for user,group,world by adding, 4-read(r), 2-write(w), 1-execute(x)
 
-### Searching
+## Searching
 - grep pattern file : Search for pattern in file
 - grep -r pattern dir : Search recursively for pattern in dir
 - command | grep  pattern : Search pattern in the output of a command
@@ -43,7 +43,7 @@
 - find .-name filename  Searches in the current directory (represented by a period) and below it, for files and directories with names starting with filename
 - pgrep pattern : Searches for all the named processes , that matches with the pattern and, by default, returns their ID
 
-### System Info
+## System Info
 - date : Show the current date and time
 - cal : Show this month's calender
 - uptime :Show current uptime
@@ -60,7 +60,7 @@
 - whereis app : Show possible locations of app
 - which app : Show which applications will be run by default
 
-### Compression
+## Compression
 - tar cf file.tar file : Create tar named file.tar containing file
 - tar xf file.tar : Extract the files from file.tar
 - tar czf file.tar.gz files : Create a tar with Gzip compression
@@ -70,16 +70,17 @@
 - gzip file : Compresses file and renames it to file.gz
 - gzip -d file.gz : Decompresses file.gz back to file
 
-### Network
+## Network
 - ping host : Ping host and output results
 - whois domain : Get whois information for domains
 - dig domain : Get DNS information for domain
 - dig -x host : Reverse lookup host
 - wget file : Download file
 - wget -c file:  Continue a stopped download
- 
+- netstat : displays various network related information such as network connections, routing tables, interface statistics, masquerade connections, ... 
+- nslookup : used to obtain information about Internet servers. As its name suggests, the utility finds name server information for domains by querying DNS
 
-### Shortcuts
+## Shortcuts
 - ctrl+c : Halts the current command
 - ctrl+z : Stops the current command, resume with fg in the foreground or bg in the background
 - ctrl+d Logout the current session, similar to exit
