@@ -1,7 +1,7 @@
 # BasicLinuxCommand
 ##  File Commands
-### ls :   Directory listing
-### ls -al  : Formatted listing with hidden files
+- ls :   Directory listing
+- ls -al  : Formatted listing with hidden files
 ### ls -lt : Sorting the Formatted listing by time modification
 ### cd dir : Change directory to dir
 ### cd Change : to home directory
