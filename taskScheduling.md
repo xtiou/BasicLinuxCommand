@@ -13,10 +13,10 @@ $EDITOR=nano crontab -e
 - crontab -v : display the last time of crontab file edition <br/>
 
 ## crontab file Syntax
-***** command_to_execute
-
-*[1] *[2] *[3] *[4] *[5] command_to_execute  <br/>
-
+```bash
+* * * * * command_to_execute
+*[1] *[2] *[3] *[4] *[5] command_to_execute
+```
 - *[1] : minute (0 - 59) <br/>
 - *[2]  : hour (0- 23)   <br/>
 - *[3] : day of month (1-31) <br/>
@@ -33,7 +33,8 @@ additinal (non - standard): <br/>
 - @reboot	(non-standard) : after reboot <br/>
 
 ## eg
+```bash
 0 0 * * 6 rm /home/manantsoa/tmp/*: remove temp file for user "manantsoa" At 00:00 on Saturday
-
+```
 ## Check here
 * [Click here to check](https://crontab.guru/)
