@@ -1,4 +1,11 @@
 # Task scheduling in cron
+## Crontab file location 
+/etc/crontab
+## editor preference
+Vi is the default editor to edit crontab file<br/>
+To change it nano use the command bellow  <br/>
+$ EDITOR=nano crontab -e
+
 ## Parameters
 crontab -l : display content of the cron file<br/>
 crontab -e : edit the crontab file<br/>
