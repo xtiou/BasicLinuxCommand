@@ -4,7 +4,7 @@
 ## editor preference
 Vi is the default editor to edit crontab file<br/>
 To change it nano use the command bellow  <br/>
-<script src="https://gist.github.com/rmanantsoa/0a4abd92fcd4721336c09b0f09c43973.js"></script>
+$EDITOR=nano crontab -e
 
 ## Parameters
 - crontab -l : display content of the cron file<br/>
