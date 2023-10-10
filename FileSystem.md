@@ -20,3 +20,19 @@
 * /tmp	Temporary files; on many distributions lost across a reboot and may be a ramdisk in memory.
 * /usr	Multi-user applications, utilities and data; theoretically read-only.
 * /var	Variable data that changes during system operation
+
+### additional distribution-specific :
+* /misc, which can be used for miscellaneous data
+* /tftpboot, which is used for booting using tftp
+ 
+### the root (/) directory
+the root partition must contain all essential files required to boot the system and then mount all other file systems.
+Thus, it needs utilities, configuration files, boot loader information, and other essential startup data.
+It must be adequate to:
+
+* Boot the system.​
+* Restore the system from system backups on external media such as tapes and other removable media or NAS etc.​
+* Recover and/or repair the system; an experienced maintainer must have the tools to diagnose and reconstruct a damaged system.
+
+
+  
