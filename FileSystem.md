@@ -34,5 +34,25 @@ It must be adequate to:
 * Restore the system from system backups on external media such as tapes and other removable media or NAS etc.​
 * Recover and/or repair the system; an experienced maintainer must have the tools to diagnose and reconstruct a damaged system.
 
+### /bin
+The /bin directory:
 
+* It contains executable programs and scripts needed by both system administrators and unprivileged users, which are required when no other filesystems have yet been mounted; for example, when booting into single user or recovery mode.
+* may also contain executables which are used indirectly by scripts.
+* may not include any subdirectories.
+
+Required programs which must exist in the /bin/ directory include:
+
+cat, chgrp, chmod, chown, cp, date, dd, df, dmesg, echo, false, hostname, kill, ln, login, ls, mkdir, mknod, more, mount, mv, ps, pwd, rm, rmdir, sed, sh, stty, su, sync, true, umount and uname
+
+### /boot
+The /boot directory contains everything required for the boot process. The two files which are absolutely essential are:
+* vmlinuz: The compressed Linux kernel
+* initramfs: The initial RAM filesystem, which is mounted before the real root filesystem becomes available
+
+The /boot directory stores data used before the kernel begins executing user-mode programs. It also includes two files used for information and debugging:
+
+* config : Used to configure the kernel compilation.
+* System.map : Kernel symbol table, used for debugging.
+ 
   
